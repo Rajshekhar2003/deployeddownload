@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom File Upload System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <video autoplay muted loop class="background-video">
+        <source src="fineaudo.mp4" type="video/mp4">
+    </video>
+    <audio id="background-audio" loop>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="upload-container">
+        <h1>Upload Files</h1>
+        <label for="file-upload" class="custom-file-upload">Choose Files</label>
+        <input id="file-upload" type="file" multiple accept="application/pdf" style="display: none;" />
+        
+        <ul class="file-list" id="file-list"></ul>
+        
+        <button class="merge-button" id="merge-pdf">Merge All PDFs</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
